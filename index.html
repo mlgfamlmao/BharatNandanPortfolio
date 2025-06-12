@@ -553,6 +553,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .progress-fill-project-status{
+            height: 100%;
+            background: #00bfff;
+            color: 00bfff;
+            border-radius: 4px;
+            width: 0;
+            transition: width 1.5s ease-out;
+        }
 
         .contact-buttons {
             display: flex;
@@ -610,6 +618,22 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+                .progress-bar-project-status {
+            width: 100%;
+            height: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill-project-status {
+            height: 100%;
+            background: #000;
+            border-radius: 4px;
+            width: 0;
+            transition: width 1.5s ease-out;
         }
 
         @keyframes glow {
@@ -696,8 +720,8 @@
             <h2>About Me</h2>
         </div>
         <div class="about-text">
-            <p>I'm a passionate Computer Science student at NSUT with a deep fascination for cybersecurity, operating systems, software development, and emerging technologies. My journey in tech spans from low-level system programming to high-level data analysis and machine learning applications.</p>
-            <p>When I'm not coding, you'll find me playing AAA games or on FL Studio. </p>
+            <p>I'm a passionate Computer Science and engineering student at Netaji Subash university of technology with a deep fascination for cybersecurity, operating systems, software development, and emerging technologies. My journey in tech spans from low-level system programming to high-level data analysis and machine learning applications.</p>
+            <p> <!-- Add something here later --> </p>
             
             </div>
     </section>
@@ -839,11 +863,12 @@
                     <div class="tech-tag">PyAudio</div>
                     <div class="tech-tag">SQLite</div>
                 </div>
+
             </div>
 
                        <div class="project-card">
                 <div class="project-header">
-                    <div class="project-title"> Boston Price prediction using linear regresion </div>
+                    <div class="project-title"> Boston Price prediction using linear regresion (★★★) </div>
                     <div class="project-status">Completed</div>
                 </div>
                 <div class="project-description">
@@ -859,6 +884,10 @@
                     <div class="tech-tag">Pandas</div>
                     <div class="tech-tag">Seaborn</div>
                 </div>
+                <br>
+                <a href="https://github.com/mlgfamlmao/BostonPriceLinearRegression" target="_blank" class="social-link github" title="GitHub">
+        Git
+    </a>
             </div>
 
                <div class="project-card">
@@ -875,12 +904,16 @@
                     <div class="tech-tag">psutil</div>
                    
                 </div>
+                <br>
+                <a href="https://github.com/mlgfamlmao/PsutilNetworkTracker-Incomplete-GUI-" target="_blank" class="social-link github" title="GitHub">
+        Git
+    </a>
             </div>
         
               <div class="project-card">
                 <div class="project-header">
-                    <div class="project-title"> Hybrid Athlete Training App ★★★★★ </div>
-                    <div class="project-status"> Work in progress </div>
+                    <div class="project-title"> Hybrid Athlete Training App (★★★★★) </div>
+                    <div class="project-status"> Work in progress (40% done)</div>
                 </div>
                 <div class="project-description">
                     A smart, adaptive app that generates weekly training plans for hybrid athletes balancing
@@ -888,6 +921,7 @@ strength and endurance (cycling, running, rowing, HIIT) and dynamically adjusts 
 data from wearables (Garmin, WHOOP, Apple Watch, etc.)
 
                 </div>
+                
                 <div class="tech-tags">
                     <div class="tech-tag">FrontEnd: React</div>
                     <div class="tech-tag">BackEnd: FastAPI</div>
@@ -895,10 +929,14 @@ data from wearables (Garmin, WHOOP, Apple Watch, etc.)
                     <div class="tech-tag">Sync APIs: Garmin, WHOOP, Fitbit, HealthKit, Strava</div>
                     <div class="tech-tag">PDF: WeasyPrint / FPDF</div>
                     <div class="tech-tag">Zwift file generation: custom XML (.zwo builder)</div>
+  
 
                    
                 </div>
-            </div>
+                <br>
+<div class="progress-bar">
+                    <div class="progress-fill-project-status" data-width="40"></div>
+                </div>
         
 
         </div>
